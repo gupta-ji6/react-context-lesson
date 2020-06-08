@@ -7,7 +7,7 @@ import { selectCartItemsCount } from '../../redux/cart/cart.selectors';
 import { ReactComponent as ShoppingIcon } from '../../assets/shopping-bag.svg';
 
 import './cart-icon.styles.scss';
-import CartContext from '../../contexts/cart/cart.context';
+import { CartContext } from '../../providers/cart/cart.provider';
 
 const CartIcon = ({ itemCount }) => {
   const { toggleHidden } = useContext(CartContext);
